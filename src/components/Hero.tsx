@@ -13,19 +13,26 @@ export default function Hero() {
           className="text-[3.6rem] max-md:text-[2.4rem] max-sm:text-[2rem] font-bold text-white mb-6 leading-[1.1] tracking-tight animate-[fadeIn_0.8s_ease_0.4s_forwards] opacity-0"
           style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
         >
-          A complete food program for your coffee shop.
+          A managed product shelf for your coffee shop.
         </h1>
         <p className="text-[1.1rem] text-cream/85 leading-[1.8] max-w-[540px] mx-auto mb-10 animate-[fadeIn_0.8s_ease_0.6s_forwards] opacity-0">
-          Chef-made meals and snacks delivered to your counter every morning.
-          Simple finishing, premium results, and truly delighted customers. Save
-          on labor, equipment, and hassle by partnering with us.
+          Curated snacks, beverages, and wellness products placed and managed
+          inside your cafe. You earn from every sale. We handle everything else.
         </p>
-        <a
-          href="#contact"
-          className="inline-block text-[0.95rem] font-semibold text-white bg-terra px-10 py-3.5 rounded-[5px] hover:bg-terra-dark hover:-translate-y-0.5 hover:shadow-[0_8px_28px_rgba(198,93,62,0.35)] transition-all animate-[fadeIn_0.8s_ease_0.8s_forwards] opacity-0"
-        >
-          Get Started
-        </a>
+        <div className="flex gap-4 justify-center animate-[fadeIn_0.8s_ease_0.8s_forwards] opacity-0">
+          <a
+            href="/cafes"
+            className="inline-block text-[0.95rem] font-semibold text-white bg-terra px-10 py-3.5 rounded-[5px] hover:bg-terra-dark hover:-translate-y-0.5 hover:shadow-[0_8px_28px_rgba(198,93,62,0.35)] transition-all"
+          >
+            Partner With Us
+          </a>
+          <a
+            href="/brands"
+            className="inline-block text-[0.95rem] font-semibold text-white border-[1.5px] border-white/40 px-8 py-3.5 rounded-[5px] hover:bg-white/10 hover:-translate-y-0.5 transition-all"
+          >
+            For Brands
+          </a>
+        </div>
       </div>
     </section>
   );

@@ -6,7 +6,7 @@ import Tiles from "@/components/Tiles";
 import SplitSection from "@/components/SplitSection";
 import HowItWorks from "@/components/HowItWorks";
 import ValueBanner from "@/components/ValueBanner";
-import ContactForm from "@/components/ContactForm";
+import ComingSoon from "@/components/ComingSoon";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -23,13 +23,14 @@ export default function Home() {
             className="text-[2.3rem] max-md:text-[1.8rem] font-bold text-forest mb-5 leading-[1.2]"
             style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
           >
-            Your customers want real food. Running a food program is a headache.
+            Your customers want more than coffee. Give it to them without the work.
           </h2>
           <p className="text-[1.02rem] text-gray leading-[1.85]">
-            Sourcing, prep, equipment, compliance, waste. Most independent cafes
-            either skip food entirely or settle for underwhelming pastries from a
-            broadline distributor. Neither option serves your customers or your
-            bottom line. Counterpart Foods exists to fix that.
+            Independent cafes leave money on the table every day. Customers want
+            snacks, drinks, and wellness products, but sourcing, ordering, and
+            managing inventory is a distraction from what you do best.
+            Counterpart Foods places a curated, managed shelf inside your space
+            so you can offer a new category with zero effort.
           </p>
           <div className="w-[50px] h-[3px] bg-terra mx-auto mt-10 rounded-sm" />
         </AnimateOnScroll>
@@ -38,11 +39,11 @@ export default function Home() {
       <Tiles />
 
       <SplitSection
-        tag="Beyond Prepared Food"
-        title="The Managed Pantry"
+        tag="The Counterpart Pantry"
+        title="A store within your store."
         paragraphs={[
-          "A curated shelf of packaged snacks, beverages, and wellness products placed alongside your food program. A category your customers want but you have no time to source.",
-          "We select the products, stock the shelf, and handle everything. You earn from every sale, same as the food program.",
+          "A branded shelf of curated products placed inside your cafe. Trending snacks, better-for-you beverages, and wellness products your customers are already looking for.",
+          "We select the products, install the shelf, stock it, and keep it fresh. You ring up the sales and keep the margin. Brands pay us for placement. Everyone wins.",
         ]}
         image="/img/pantry.png"
         imageAlt="Cobble & Co. curated pantry shelf with packaged goods"
@@ -55,8 +56,8 @@ export default function Home() {
         tag="Not a Distributor"
         title="We are your counterpart."
         paragraphs={[
-          "A distributor drops off product and leaves. We build and run your food program as a partner. Menu design, daily logistics, equipment, compliance, and ongoing optimization.",
-          "The food gets better over time because we are paying attention.",
+          "A distributor drops off product and leaves. We build and run a managed product program as a partner. Curation, merchandising, restocking, data, and optimization.",
+          "The shelf gets better over time because we are paying attention.",
         ]}
         image="/img/delivery.png"
         imageAlt="Counterpart Foods delivery to The Daily Grind"
@@ -65,7 +66,7 @@ export default function Home() {
       />
 
       <ValueBanner />
-      <ContactForm />
+      <ComingSoon />
       <Footer />
     </>
   );

@@ -16,8 +16,7 @@ export default function Navbar() {
     <>
       {/* Top banner */}
       <div className="fixed top-0 left-0 right-0 z-[101] bg-terra text-white text-center py-2 px-4 text-[0.82rem] font-semibold tracking-wide">
-        New Cafe Special: Try for 3 weeks with Zero Waste Risk -- only pay for
-        what you sell!
+        Now launching the Counterpart Pantry in NYC coffee shops!
       </div>
 
       {/* Nav */}
@@ -36,13 +35,19 @@ export default function Navbar() {
           </Link>
           <div className="flex items-center gap-6">
             <Link
+              href="/cafes"
+              className="text-[0.85rem] font-medium text-gray hover:text-forest transition-colors hidden sm:block"
+            >
+              For Cafes
+            </Link>
+            <Link
               href="/brands"
               className="text-[0.85rem] font-medium text-gray hover:text-forest transition-colors hidden sm:block"
             >
               For Brands
             </Link>
             <a
-              href="#contact"
+              href="/cafes#cafe-apply"
               className="text-[0.82rem] font-semibold text-white bg-terra px-5 py-2 rounded-[5px] hover:bg-terra-dark hover:-translate-y-px hover:shadow-[0_4px_12px_rgba(198,93,62,0.3)] transition-all"
             >
               Partner With Us

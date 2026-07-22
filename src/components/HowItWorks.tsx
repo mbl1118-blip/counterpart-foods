@@ -2,8 +2,8 @@ import AnimateOnScroll from "./AnimateOnScroll";
 
 const steps = [
   {
-    title: "We Design",
-    text: "A menu tailored to your space, your neighborhood, and your customers.",
+    title: "We Select",
+    text: "A curated mix of products matched to your neighborhood and customer base.",
     icon: (
       <svg viewBox="0 0 30 30" className="w-[30px] h-[30px] fill-none stroke-white stroke-[1.8] [stroke-linecap:round] [stroke-linejoin:round]">
         <path d="M5 24V12l10-6 10 6v12" />
@@ -13,8 +13,8 @@ const steps = [
     ),
   },
   {
-    title: "We Produce",
-    text: "Prepared fresh daily. Quality-controlled, properly packaged, labeled for retail.",
+    title: "We Place",
+    text: "A branded shelf unit installed in your space, stocked and merchandised by our team.",
     icon: (
       <svg viewBox="0 0 30 30" className="w-[30px] h-[30px] fill-none stroke-white stroke-[1.8] [stroke-linecap:round] [stroke-linejoin:round]">
         <circle cx="15" cy="15" r="9" />
@@ -23,8 +23,8 @@ const steps = [
     ),
   },
   {
-    title: "We Deliver",
-    text: "Daily courier delivery before you open. Consistent, reliable, on time.",
+    title: "We Manage",
+    text: "Restocking, rotation, and swap-outs based on sell-through data. You do nothing.",
     icon: (
       <svg viewBox="0 0 30 30" className="w-[30px] h-[30px] fill-none stroke-white stroke-[1.8] [stroke-linecap:round] [stroke-linejoin:round]">
         <rect x="3" y="12" width="15" height="10" rx="1.5" />
@@ -35,8 +35,8 @@ const steps = [
     ),
   },
   {
-    title: "You Finish and Sell",
-    text: "Light finishing, thoughtful merchandising, ring it up. The food looks and tastes like yours.",
+    title: "You Earn",
+    text: "Ring it up at your POS, keep the margin between the sell-to price and your shelf price.",
     icon: (
       <svg viewBox="0 0 30 30" className="w-[30px] h-[30px] fill-none stroke-white stroke-[1.8] [stroke-linecap:round] [stroke-linejoin:round]">
         <rect x="4" y="7" width="22" height="16" rx="2" />
@@ -59,7 +59,7 @@ export default function HowItWorks() {
             How It Works
           </h2>
           <p className="text-gray">
-            From our kitchen to your counter, every morning.
+            A managed shelf inside your cafe. No ordering, no inventory, no hassle.
           </p>
         </div>
       </AnimateOnScroll>

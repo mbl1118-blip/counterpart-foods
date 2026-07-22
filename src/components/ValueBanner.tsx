@@ -2,8 +2,8 @@ import AnimateOnScroll from "./AnimateOnScroll";
 
 const items = [
   {
-    title: "No Equipment Costs",
-    text: "We provide displays, finishing equipment, and merchandising fixtures at no charge to you.",
+    title: "Zero Inventory Cost",
+    text: "Products are placed on consignment. You never pay for unsold inventory.",
     icon: (
       <svg viewBox="0 0 24 24" className="w-6 h-6 stroke-terra fill-none stroke-[1.8] [stroke-linecap:round] [stroke-linejoin:round]">
         <path d="M12 2v20M8 6l4-4 4 4M8 18l4 4 4-4" />
@@ -11,8 +11,8 @@ const items = [
     ),
   },
   {
-    title: "No Kitchen Required",
-    text: "Product arrives nearly ready. Your team does light finishing to keep quality high. We provide any equipment you need.",
+    title: "No Sourcing Required",
+    text: "We find the products, negotiate with brands, and keep the shelf fresh. You focus on coffee.",
     icon: (
       <svg viewBox="0 0 24 24" className="w-6 h-6 stroke-terra fill-none stroke-[1.8] [stroke-linecap:round] [stroke-linejoin:round]">
         <rect x="3" y="3" width="18" height="18" rx="3" />
@@ -21,8 +21,8 @@ const items = [
     ),
   },
   {
-    title: "Smart Ordering",
-    text: "We use sell-through data to dial in your daily order so you are not stuck with excess. Start consignment for 3 weeks, then move to pre-order.",
+    title: "POS Integration",
+    text: "We work with Toast, Square, and Clover to get products into your system seamlessly.",
     icon: (
       <svg viewBox="0 0 24 24" className="w-6 h-6 stroke-terra fill-none stroke-[1.8] [stroke-linecap:round] [stroke-linejoin:round]">
         <circle cx="12" cy="12" r="9" />

@@ -3,23 +3,23 @@ import AnimateOnScroll from "./AnimateOnScroll";
 const tiles = [
   {
     accent: "forest",
-    title: "We manage the entire food program.",
-    text: "Menu design, production sourcing, daily delivery, equipment, displays, packaging, and compliance. Turnkey, end to end. Your team handles simple finishing and sells.",
+    title: "We curate and stock the shelf.",
+    text: "Trending snacks, better-for-you beverages, and wellness products selected to match your customers. We handle sourcing, placement, and restocking.",
   },
   {
     accent: "terra",
-    title: "Minimal lift for your team.",
-    text: "No sourcing. No kitchen. No inventory management. We deliver every morning before you open. Your team does simple finishing to keep it looking and tasting premium.",
+    title: "Zero inventory risk.",
+    text: "Products are placed on consignment. You never buy inventory upfront. If it does not sell, we swap it out. You only earn, never lose.",
   },
   {
     accent: "forest",
-    title: "Food that matches your coffee.",
-    text: "Fresh sandwiches, bowls, and salads that look and taste handmade. A rotating menu that gives your regulars something new alongside something they trust.",
+    title: "Brands pay for placement.",
+    text: "CPG brands pay us a monthly fee to be on your shelf. That is our business. Your business is keeping the margin on every sale.",
   },
   {
     accent: "terra",
-    title: "Additional revenue as easy as hitting a button.",
-    text: "Focus on your space and customers while we do the heavy lifting in the kitchen.",
+    title: "A new category with no effort.",
+    text: "Your customers already want snacks and drinks alongside their coffee. Now you can offer them without sourcing, ordering, or managing anything.",
   },
 ];
 

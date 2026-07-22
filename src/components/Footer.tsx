@@ -20,6 +20,13 @@ export default function Footer() {
         </a>
         {" "}&middot;{" "}
         <Link
+          href="/cafes"
+          className="text-[#999] no-underline hover:text-white transition-colors"
+        >
+          For Cafes
+        </Link>
+        {" "}&middot;{" "}
+        <Link
           href="/brands"
           className="text-[#999] no-underline hover:text-white transition-colors"
         >
