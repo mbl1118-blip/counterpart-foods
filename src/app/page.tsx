@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import PhotoGrid from "@/components/PhotoGrid";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import Tiles from "@/components/Tiles";
 import SplitSection from "@/components/SplitSection";
@@ -14,36 +13,30 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
-      <PhotoGrid />
 
-      {/* Intro */}
-      <section className="max-w-[680px] mx-auto py-24 px-8 text-center">
+      {/* One-liner */}
+      <section className="bg-white py-20 px-8">
         <AnimateOnScroll>
-          <h2
-            className="text-[2.3rem] max-md:text-[1.8rem] font-bold text-forest mb-5 leading-[1.2]"
+          <p
+            className="text-[2.6rem] max-md:text-[1.8rem] font-bold text-forest text-center leading-[1.2] max-w-[700px] mx-auto"
             style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
           >
-            Your customers want more than coffee. Give it to them without the work.
-          </h2>
-          <p className="text-[1.02rem] text-gray leading-[1.85]">
-            Independent cafes leave money on the table every day. Customers want
-            snacks, drinks, and wellness products, but sourcing, ordering, and
-            managing inventory is a distraction from what you do best.
-            Counterpart Foods places a curated, managed shelf inside your space
-            so you can offer a new category with zero effort.
+            Counterpart Foods is the managed product shelf for independent
+            coffee shops.
           </p>
-          <div className="w-[50px] h-[3px] bg-terra mx-auto mt-10 rounded-sm" />
         </AnimateOnScroll>
       </section>
 
+      {/* Two-audience tiles */}
       <Tiles />
 
+      {/* Pantry split */}
       <SplitSection
         tag="The Counterpart Pantry"
         title="A store within your store."
         paragraphs={[
           "A branded shelf of curated products placed inside your cafe. Trending snacks, better-for-you beverages, and wellness products your customers are already looking for.",
-          "We select the products, install the shelf, stock it, and keep it fresh. You ring up the sales and keep the margin. Brands pay us for placement. Everyone wins.",
+          "We select the products, install the shelf, stock it, and keep it fresh. You ring up the sales and keep the margin.",
         ]}
         image="/img/pantry.png"
         imageAlt="Cobble & Co. curated pantry shelf with packaged goods"
@@ -51,7 +44,9 @@ export default function Home() {
       />
 
       <HowItWorks />
+      <ValueBanner />
 
+      {/* Delivery split */}
       <SplitSection
         tag="Not a Distributor"
         title="We are your counterpart."
@@ -65,7 +60,6 @@ export default function Home() {
         reverse
       />
 
-      <ValueBanner />
       <ComingSoon />
       <Footer />
     </>

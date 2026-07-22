@@ -15,8 +15,8 @@ export default function Navbar() {
   return (
     <>
       {/* Top banner */}
-      <div className="fixed top-0 left-0 right-0 z-[101] bg-terra text-white text-center py-2 px-4 text-[0.82rem] font-semibold tracking-wide">
-        Now launching the Counterpart Pantry in NYC coffee shops!
+      <div className="fixed top-0 left-0 right-0 z-[101] bg-forest text-white text-center py-2 px-4 text-[0.82rem] font-semibold tracking-wide">
+        Now launching in NYC coffee shops.
       </div>
 
       {/* Nav */}
@@ -48,7 +48,7 @@ export default function Navbar() {
             </Link>
             <a
               href="/cafes#cafe-apply"
-              className="text-[0.82rem] font-semibold text-white bg-terra px-5 py-2 rounded-[5px] hover:bg-terra-dark hover:-translate-y-px hover:shadow-[0_4px_12px_rgba(198,93,62,0.3)] transition-all"
+              className="text-[0.82rem] font-semibold text-white bg-terra px-5 py-2 rounded-full hover:bg-terra-dark hover:-translate-y-px hover:shadow-[0_4px_12px_rgba(198,93,62,0.3)] transition-all"
             >
               Partner With Us
             </a>
