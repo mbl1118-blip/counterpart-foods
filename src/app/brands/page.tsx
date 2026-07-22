@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
-import AnimateOnScroll from "@/components/AnimateOnScroll";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -9,274 +9,280 @@ export const metadata: Metadata = {
     "Get your products onto shelves in NYC's best independent coffee shops. Apply for placement in the Counterpart Pantry network.",
 };
 
-const benefits = [
-  {
-    title: "Targeted placement",
-    text: "Your product on curated shelves inside independent coffee shops with high foot traffic and the right demographic.",
-  },
-  {
-    title: "Real sell-through data",
-    text: "POS-integrated reporting shows exactly what sold, where, and when. No guessing, no surveys.",
-  },
-  {
-    title: "Zero retail complexity",
-    text: "We handle shelf placement, restocking, merchandising, and rotation. You ship product to our warehouse.",
-  },
-  {
-    title: "Discovery-first audience",
-    text: "Coffee shop customers browse while they wait. They are open to trying new products in a trusted, curated environment.",
-  },
-];
-
 export default function BrandsPage() {
   return (
     <>
       <Navbar />
 
-      {/* Hero */}
-      <section className="min-h-[70vh] flex items-center justify-center bg-forest relative overflow-hidden pt-24">
-        <div className="absolute w-[500px] h-[500px] rounded-full bg-[radial-gradient(circle,rgba(198,93,62,0.12)_0%,transparent_70%)] -top-[200px] -left-[100px]" />
+      {/* Hero - oversized headline with flanking images */}
+      <section className="min-h-screen flex items-center justify-center bg-cream relative overflow-hidden pt-[80px]">
+        {/* Left image */}
+        <div className="absolute left-0 top-[80px] bottom-0 w-[22%] max-lg:hidden">
+          <Image
+            src="/img/pantry.png"
+            alt="Curated pantry shelf"
+            fill
+            className="object-cover"
+          />
+        </div>
+        {/* Right image */}
+        <div className="absolute right-0 top-[120px] w-[20%] h-[65%] max-lg:hidden">
+          <Image
+            src="/img/bowl.jpg"
+            alt="Curated products"
+            fill
+            className="object-cover rounded-bl-[20px]"
+          />
+        </div>
+
         <div className="relative z-10 text-center px-8 max-w-[700px]">
-          <div className="inline-block text-[0.72rem] font-semibold tracking-[0.18em] uppercase text-terra border-[1.5px] border-terra/60 rounded-full px-5 py-1.5 mb-8 animate-[fadeIn_0.8s_ease_0.2s_forwards] opacity-0">
-            For CPG Brands
-          </div>
           <h1
-            className="text-[3.2rem] max-md:text-[2.2rem] font-bold text-white mb-6 leading-[1.1] tracking-tight animate-[fadeIn_0.8s_ease_0.4s_forwards] opacity-0"
+            className="text-[4.5rem] max-lg:text-[3.2rem] max-sm:text-[2.4rem] font-bold text-forest leading-[1.05] tracking-tight mb-8"
             style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
           >
-            Get your product onto shelves in NYC coffee shops.
+            Want a spot on our shelves? Let&apos;s talk.
           </h1>
-          <p className="text-[1.05rem] text-cream/85 leading-[1.8] max-w-[520px] mx-auto mb-10 animate-[fadeIn_0.8s_ease_0.6s_forwards] opacity-0">
-            The Counterpart Pantry is a managed retail shelf inside independent
-            cafes across New York City. We place, merchandise, and report on
-            your product. You pay a monthly placement fee per location. The cafe
-            sells it and keeps the margin.
+          <p className="text-[1.15rem] text-gray leading-[1.7] max-w-[480px] mx-auto mb-10">
+            We place your product inside NYC&apos;s best independent coffee
+            shops. You pay a placement fee. The cafe sells it. Everyone wins.
           </p>
           <a
             href="#brand-apply"
-            className="inline-block text-[0.95rem] font-semibold text-white bg-terra px-10 py-3.5 rounded-[5px] hover:bg-terra-dark hover:-translate-y-0.5 hover:shadow-[0_8px_28px_rgba(198,93,62,0.35)] transition-all animate-[fadeIn_0.8s_ease_0.8s_forwards] opacity-0"
+            className="inline-block text-[1rem] font-semibold text-white bg-terra px-12 py-4 rounded-full hover:bg-terra-dark hover:-translate-y-0.5 hover:shadow-[0_8px_28px_rgba(198,93,62,0.35)] transition-all"
           >
-            Apply for Placement
+            Apply Now
           </a>
         </div>
       </section>
 
-      {/* How it works for brands */}
-      <section className="max-w-[800px] mx-auto py-24 px-8">
-        <AnimateOnScroll>
-          <div className="text-center mb-16">
-            <h2
-              className="text-[2.3rem] max-md:text-[1.8rem] font-bold text-forest mb-3"
-              style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
-            >
-              How it works
-            </h2>
-            <p className="text-gray text-[1rem] max-w-[500px] mx-auto">
-              A simple model: you provide product on consignment with a sell-to
-              price. The cafe keeps the margin. You pay a monthly placement fee
-              per location.
-            </p>
-          </div>
-        </AnimateOnScroll>
+      {/* The Counterpart Difference - color blocked */}
+      <section className="bg-forest py-24 px-8">
+        <h2
+          className="text-[3.5rem] max-md:text-[2.4rem] font-bold text-white text-center mb-20 leading-[1.1]"
+          style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
+        >
+          The Counterpart Difference
+        </h2>
 
-        <div className="space-y-6">
+        <div className="max-w-[1000px] mx-auto grid grid-cols-3 max-md:grid-cols-1 gap-12">
           {[
             {
-              step: "01",
-              title: "Apply and send samples",
-              text: "Tell us about your product, target customer, and goals. We review for fit with our cafe network and audience.",
+              num: "01",
+              title: "Real shelves, real customers.",
+              text: "Not a pop-up. Not a virtual shelf. Your product on a curated display inside coffee shops with daily foot traffic.",
             },
             {
-              step: "02",
-              title: "We place your product",
-              text: "Accepted products go onto Counterpart Pantry shelves with a branded shelf talker telling your story. We handle all merchandising.",
+              num: "02",
+              title: "Limited competition.",
+              text: "We cap categories. Your granola is not sitting next to five other granolas. Thoughtful placement, not a free-for-all.",
             },
             {
-              step: "03",
-              title: "Consignment-based inventory",
-              text: "You ship product to our warehouse. We distribute to locations. You set the sell-to price; the cafe prices to their market and keeps the spread.",
+              num: "03",
+              title: "Actual sell-through data.",
+              text: "POS-integrated reporting by location, by week. Know exactly what moved, where, and when. No guessing.",
             },
-            {
-              step: "04",
-              title: "Real data, monthly reporting",
-              text: "POS-integrated sell-through data by location, by week. Know exactly how your product performs in each neighborhood.",
-            },
-          ].map((item, i) => (
-            <AnimateOnScroll key={i} delay={i * 100}>
-              <div className="flex gap-6 items-start p-8 bg-off-white rounded-[10px] border border-black/[0.04]">
-                <div
-                  className="text-[2rem] font-bold text-terra/30 leading-none shrink-0"
-                  style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
-                >
-                  {item.step}
-                </div>
-                <div>
-                  <h3
-                    className="text-[1.2rem] font-bold text-forest mb-1"
-                    style={{
-                      fontFamily: "var(--font-garamond), Georgia, serif",
-                    }}
-                  >
-                    {item.title}
-                  </h3>
-                  <p className="text-[0.93rem] text-gray leading-[1.75]">
-                    {item.text}
-                  </p>
-                </div>
+          ].map((item) => (
+            <div key={item.num} className="text-center">
+              <div
+                className="text-[3rem] font-bold text-terra mb-4"
+                style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
+              >
+                {item.num}
               </div>
-            </AnimateOnScroll>
+              <h3
+                className="text-[1.5rem] max-md:text-[1.3rem] font-bold text-white mb-3 leading-[1.2]"
+                style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
+              >
+                {item.title}
+              </h3>
+              <p className="text-cream/70 text-[0.93rem] leading-[1.7]">
+                {item.text}
+              </p>
+            </div>
           ))}
         </div>
       </section>
 
-      {/* Benefits */}
-      <section className="bg-off-white py-20 px-8">
-        <div className="max-w-[1000px] mx-auto">
-          <AnimateOnScroll>
-            <h2
-              className="text-[2rem] max-md:text-[1.6rem] font-bold text-forest text-center mb-12"
-              style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
-            >
-              Why brands choose the Counterpart Pantry
-            </h2>
-          </AnimateOnScroll>
-          <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6">
-            {benefits.map((b, i) => (
-              <AnimateOnScroll key={i} delay={i * 100}>
-                <div className="bg-white rounded-[10px] border border-black/[0.04] p-8 shadow-[0_1px_12px_rgba(0,0,0,0.03)]">
-                  <h3
-                    className="text-[1.2rem] font-bold text-forest mb-2"
-                    style={{
-                      fontFamily: "var(--font-garamond), Georgia, serif",
-                    }}
-                  >
-                    {b.title}
-                  </h3>
-                  <p className="text-[0.93rem] text-gray leading-[1.75]">
-                    {b.text}
-                  </p>
-                </div>
-              </AnimateOnScroll>
+      {/* How it works - split layout */}
+      <section className="grid grid-cols-2 max-md:grid-cols-1">
+        {/* Image */}
+        <div className="relative min-h-[600px] max-md:min-h-[350px] bg-cream">
+          <Image
+            src="/img/cafe-counter.png"
+            alt="Cafe counter with curated products"
+            fill
+            className="object-cover"
+          />
+        </div>
+
+        {/* Steps */}
+        <div className="bg-cream flex flex-col justify-center px-14 py-16 max-md:px-8">
+          <h2
+            className="text-[3rem] max-md:text-[2.2rem] font-bold text-forest mb-12 leading-[1.1]"
+            style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
+          >
+            How it works
+          </h2>
+
+          <div className="space-y-8">
+            {[
+              {
+                title: "Apply and send samples",
+                text: "Tell us about your product. We review for fit with our cafe network.",
+              },
+              {
+                title: "We place your product",
+                text: "Accepted products go onto Counterpart Pantry shelves with branded shelf talkers. We handle all merchandising.",
+              },
+              {
+                title: "Consignment inventory",
+                text: "You ship product to us. We distribute to locations. You set the sell-to price. The cafe prices to their market.",
+              },
+              {
+                title: "Monthly reporting",
+                text: "POS-integrated sell-through data by location, by week. Actionable, not decorative.",
+              },
+            ].map((step, i) => (
+              <div key={i} className="border-t-[2px] border-forest/15 pt-6">
+                <h3
+                  className="text-[1.3rem] font-bold text-forest mb-1.5"
+                  style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
+                >
+                  {step.title}
+                </h3>
+                <p className="text-[0.93rem] text-gray leading-[1.7]">
+                  {step.text}
+                </p>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Brand Application Form */}
-      <section className="max-w-[560px] mx-auto py-24 px-8" id="brand-apply">
-        <AnimateOnScroll>
-          <div className="text-center mb-10">
-            <h2
-              className="text-[2.3rem] max-md:text-[1.8rem] font-bold text-forest mb-2"
-              style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
-            >
-              Apply for Placement
-            </h2>
-            <p className="text-gray">
-              Tell us about your product. We review applications weekly.
-            </p>
-          </div>
-        </AnimateOnScroll>
+      {/* Stats / social proof band */}
+      <section className="bg-terra py-16 px-8">
+        <div className="max-w-[900px] mx-auto grid grid-cols-3 max-md:grid-cols-1 gap-8 text-center">
+          {[
+            { stat: "50+", label: "Coffee shops in our NYC network" },
+            { stat: "3", label: "Products max per category" },
+            { stat: "Weekly", label: "Sell-through reports delivered" },
+          ].map((item, i) => (
+            <div key={i}>
+              <div
+                className="text-[3.5rem] max-md:text-[2.5rem] font-bold text-white leading-none mb-2"
+                style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
+              >
+                {item.stat}
+              </div>
+              <p className="text-white/80 text-[0.9rem]">{item.label}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
-        <AnimateOnScroll>
+      {/* Pull quote */}
+      <section className="bg-cream py-20 px-8">
+        <div className="max-w-[800px] mx-auto text-center">
+          <p
+            className="text-[2.2rem] max-md:text-[1.6rem] font-bold text-forest leading-[1.3] mb-6"
+            style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
+          >
+            &ldquo;The best way to get your product in front of the right
+            people is to put it where they already go every morning.&rdquo;
+          </p>
+          <p className="text-terra font-semibold text-[0.95rem]">
+            Counterpart Foods Team
+          </p>
+        </div>
+      </section>
+
+      {/* Application form - clean, simple */}
+      <section className="bg-white py-24 px-8" id="brand-apply">
+        <div className="max-w-[560px] mx-auto">
+          <h2
+            className="text-[3rem] max-md:text-[2.2rem] font-bold text-forest text-center mb-10 leading-[1.1]"
+            style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
+          >
+            Apply Now
+          </h2>
+
           <form action="https://formspree.io/f/YOUR_BRAND_FORM_ID" method="POST">
-            <div className="grid grid-cols-2 max-md:grid-cols-1 gap-3.5 mb-4">
+            <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-4 mb-4">
               <div>
-                <label
-                  htmlFor="brand-contact"
-                  className="block text-[0.78rem] font-semibold text-dark mb-1 tracking-wide"
-                >
-                  Your Name
+                <label className="block text-[0.8rem] font-semibold text-dark mb-1.5 tracking-wide">
+                  Contact Name*
                 </label>
                 <input
                   type="text"
-                  id="brand-contact"
                   name="contact_name"
                   required
-                  className="w-full px-3.5 py-3 border-[1.5px] border-light-gray rounded-[5px] text-[0.93rem] text-dark bg-white focus:outline-none focus:border-forest focus:shadow-[0_0_0_3px_rgba(45,74,62,0.08)] transition-all"
+                  className="w-full px-4 py-3.5 border-2 border-forest/20 rounded-[8px] text-[0.95rem] text-dark bg-white focus:outline-none focus:border-forest transition-all"
                 />
               </div>
               <div>
-                <label
-                  htmlFor="brand-name"
-                  className="block text-[0.78rem] font-semibold text-dark mb-1 tracking-wide"
-                >
-                  Brand Name
+                <label className="block text-[0.8rem] font-semibold text-dark mb-1.5 tracking-wide">
+                  Brand Name*
                 </label>
                 <input
                   type="text"
-                  id="brand-name"
                   name="brand_name"
                   required
-                  className="w-full px-3.5 py-3 border-[1.5px] border-light-gray rounded-[5px] text-[0.93rem] text-dark bg-white focus:outline-none focus:border-forest focus:shadow-[0_0_0_3px_rgba(45,74,62,0.08)] transition-all"
+                  className="w-full px-4 py-3.5 border-2 border-forest/20 rounded-[8px] text-[0.95rem] text-dark bg-white focus:outline-none focus:border-forest transition-all"
+                />
+              </div>
+            </div>
+            <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-4 mb-4">
+              <div>
+                <label className="block text-[0.8rem] font-semibold text-dark mb-1.5 tracking-wide">
+                  Business Email*
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  className="w-full px-4 py-3.5 border-2 border-forest/20 rounded-[8px] text-[0.95rem] text-dark bg-white focus:outline-none focus:border-forest transition-all"
+                />
+              </div>
+              <div>
+                <label className="block text-[0.8rem] font-semibold text-dark mb-1.5 tracking-wide">
+                  Brand URL
+                </label>
+                <input
+                  type="url"
+                  name="website"
+                  className="w-full px-4 py-3.5 border-2 border-forest/20 rounded-[8px] text-[0.95rem] text-dark bg-white focus:outline-none focus:border-forest transition-all"
                 />
               </div>
             </div>
             <div className="mb-4">
-              <label
-                htmlFor="brand-email"
-                className="block text-[0.78rem] font-semibold text-dark mb-1 tracking-wide"
-              >
-                Email
-              </label>
-              <input
-                type="email"
-                id="brand-email"
-                name="email"
-                required
-                className="w-full px-3.5 py-3 border-[1.5px] border-light-gray rounded-[5px] text-[0.93rem] text-dark bg-white focus:outline-none focus:border-forest focus:shadow-[0_0_0_3px_rgba(45,74,62,0.08)] transition-all"
-              />
-            </div>
-            <div className="mb-4">
-              <label
-                htmlFor="brand-website"
-                className="block text-[0.78rem] font-semibold text-dark mb-1 tracking-wide"
-              >
-                Website
-              </label>
-              <input
-                type="url"
-                id="brand-website"
-                name="website"
-                className="w-full px-3.5 py-3 border-[1.5px] border-light-gray rounded-[5px] text-[0.93rem] text-dark bg-white focus:outline-none focus:border-forest focus:shadow-[0_0_0_3px_rgba(45,74,62,0.08)] transition-all"
-              />
-            </div>
-            <div className="mb-4">
-              <label
-                htmlFor="brand-product"
-                className="block text-[0.78rem] font-semibold text-dark mb-1 tracking-wide"
-              >
-                Product category
+              <label className="block text-[0.8rem] font-semibold text-dark mb-1.5 tracking-wide">
+                Product Category
               </label>
               <input
                 type="text"
-                id="brand-product"
                 name="product_category"
                 placeholder="e.g., granola, kombucha, protein bars"
-                className="w-full px-3.5 py-3 border-[1.5px] border-light-gray rounded-[5px] text-[0.93rem] text-dark bg-white focus:outline-none focus:border-forest focus:shadow-[0_0_0_3px_rgba(45,74,62,0.08)] transition-all placeholder:text-gray/40"
+                className="w-full px-4 py-3.5 border-2 border-forest/20 rounded-[8px] text-[0.95rem] text-dark bg-white focus:outline-none focus:border-forest transition-all placeholder:text-gray/40"
               />
             </div>
-            <div className="mb-4">
-              <label
-                htmlFor="brand-message"
-                className="block text-[0.78rem] font-semibold text-dark mb-1 tracking-wide"
-              >
-                Tell us about your product and goals
+            <div className="mb-6">
+              <label className="block text-[0.8rem] font-semibold text-dark mb-1.5 tracking-wide">
+                Anything else we should know?
               </label>
               <textarea
-                id="brand-message"
                 name="message"
-                className="w-full px-3.5 py-3 border-[1.5px] border-light-gray rounded-[5px] text-[0.93rem] text-dark bg-white h-[120px] resize-y focus:outline-none focus:border-forest focus:shadow-[0_0_0_3px_rgba(45,74,62,0.08)] transition-all"
+                className="w-full px-4 py-3.5 border-2 border-forest/20 rounded-[8px] text-[0.95rem] text-dark bg-white h-[100px] resize-y focus:outline-none focus:border-forest transition-all"
               />
             </div>
             <button
               type="submit"
-              className="w-full py-3.5 bg-terra text-white font-semibold text-[0.95rem] rounded-[5px] border-none cursor-pointer mt-2 hover:bg-terra-dark hover:-translate-y-px hover:shadow-[0_4px_16px_rgba(198,93,62,0.3)] transition-all"
+              className="w-full py-4 bg-terra text-white font-bold text-[1.05rem] rounded-full border-none cursor-pointer hover:bg-terra-dark hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(198,93,62,0.35)] transition-all"
+              style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
             >
               Submit Application
             </button>
           </form>
-        </AnimateOnScroll>
+        </div>
       </section>
 
       <Footer />
