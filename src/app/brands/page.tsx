@@ -127,20 +127,20 @@ export default function BrandsPage() {
           <div className="space-y-8">
             {[
               {
-                title: "Apply and send samples",
-                text: "Tell us about your product. We review for fit with our cafe network.",
+                title: "Submit an application",
+                text: "Tell us about your brand and product. Our team reviews every submission for fit with our cafe network and customer base.",
               },
               {
-                title: "We place your product",
-                text: "Accepted products go onto Counterpart Pantry shelves with branded shelf talkers. We handle all merchandising.",
+                title: "Pay a monthly placement fee",
+                text: "Accepted brands pay a flat monthly fee per location. That gets your product on a curated shelf inside real coffee shops with daily foot traffic.",
               },
               {
-                title: "Consignment inventory",
-                text: "You ship product to us. We distribute to locations. You set the sell-to price. The cafe prices to their market.",
+                title: "Consign your product",
+                text: "You ship inventory to us at your wholesale price. We place and merchandise it across our cafe network. You keep the wholesale revenue on every unit sold.",
               },
               {
-                title: "Monthly reporting",
-                text: "POS-integrated sell-through data by location, by week. Actionable, not decorative.",
+                title: "Get real sell-through data",
+                text: "POS-integrated reporting by location, by week. Know exactly what moved, where, and when. We use it to optimize. You use it to grow.",
               },
             ].map((step, i) => (
               <div key={i} className="border-t-[2px] border-forest/15 pt-6">
