@@ -13,12 +13,12 @@ export default function Hero() {
         />
       </div>
       {/* Right image */}
-      <div className="absolute right-0 top-[100px] w-[22%] h-[70%] max-lg:hidden">
+      <div className="absolute right-0 top-[80px] bottom-0 w-[22%] max-lg:hidden">
         <Image
           src="/img/cafe-counter.jpg"
           alt="Cafe counter with curated products"
           fill
-          className="object-cover rounded-bl-[20px]"
+          className="object-cover"
         />
       </div>
 

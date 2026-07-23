@@ -24,12 +24,12 @@ export default function CafesPage() {
             className="object-cover"
           />
         </div>
-        <div className="absolute right-0 top-[120px] w-[20%] h-[65%] max-lg:hidden">
+        <div className="absolute right-0 top-[80px] bottom-0 w-[22%] max-lg:hidden">
           <Image
             src="/img/customer.jpg"
             alt="Customer discovering products at a coffee shop shelf"
             fill
-            className="object-cover rounded-bl-[20px]"
+            className="object-cover"
           />
         </div>
 
