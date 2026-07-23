@@ -6,7 +6,7 @@ export default function Hero() {
       {/* Left image */}
       <div className="absolute left-0 top-[80px] bottom-0 w-[24%] max-lg:hidden">
         <Image
-          src="/img/pantry.png"
+          src="/img/pantry.jpg"
           alt="Curated pantry shelf inside a coffee shop"
           fill
           className="object-cover"
@@ -15,7 +15,7 @@ export default function Hero() {
       {/* Right image */}
       <div className="absolute right-0 top-[100px] w-[22%] h-[70%] max-lg:hidden">
         <Image
-          src="/img/cafe-counter.png"
+          src="/img/cafe-counter.jpg"
           alt="Cafe counter with curated products"
           fill
           className="object-cover rounded-bl-[20px]"

@@ -18,7 +18,7 @@ export default function BrandsPage() {
       <section className="min-h-screen flex items-center justify-center bg-cream relative overflow-hidden pt-[80px]">
         <div className="absolute left-0 top-[80px] bottom-0 w-[22%] max-lg:hidden">
           <Image
-            src="/img/pantry.png"
+            src="/img/pantry.jpg"
             alt="Curated pantry shelf"
             fill
             className="object-cover"
@@ -26,8 +26,8 @@ export default function BrandsPage() {
         </div>
         <div className="absolute right-0 top-[120px] w-[20%] h-[65%] max-lg:hidden">
           <Image
-            src="/img/bowl.jpg"
-            alt="Curated products"
+            src="/img/products.jpg"
+            alt="Curated CPG products flat lay"
             fill
             className="object-cover rounded-bl-[20px]"
           />
@@ -111,7 +111,7 @@ export default function BrandsPage() {
       <section className="grid grid-cols-2 max-md:grid-cols-1">
         <div className="relative min-h-[600px] max-md:min-h-[350px] bg-cream">
           <Image
-            src="/img/cafe-counter.png"
+            src="/img/cafe-counter.jpg"
             alt="Cafe counter with curated products"
             fill
             className="object-cover"

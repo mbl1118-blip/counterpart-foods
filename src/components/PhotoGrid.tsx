@@ -13,7 +13,7 @@ export default function PhotoGrid() {
       </div>
       <div className="relative h-[300px] max-md:h-[220px] overflow-hidden">
         <Image
-          src="/img/cafe-counter.png"
+          src="/img/cafe-counter.jpg"
           alt="Cafe counter with fresh sandwiches, bowls, and hand pies"
           fill
           className="object-cover hover:scale-[1.03] transition-transform duration-500"
@@ -21,7 +21,7 @@ export default function PhotoGrid() {
       </div>
       <div className="relative h-[300px] max-md:h-[220px] overflow-hidden">
         <Image
-          src="/img/delivery.png"
+          src="/img/delivery.jpg"
           alt="Counterpart Foods delivery to The Daily Grind"
           fill
           className="object-cover hover:scale-[1.03] transition-transform duration-500"

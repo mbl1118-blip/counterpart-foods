@@ -18,7 +18,7 @@ export default function CafesPage() {
       <section className="min-h-screen flex items-center justify-center bg-cream relative overflow-hidden pt-[80px]">
         <div className="absolute left-0 top-[80px] bottom-0 w-[22%] max-lg:hidden">
           <Image
-            src="/img/cafe-counter.png"
+            src="/img/cafe-counter.jpg"
             alt="Cafe counter"
             fill
             className="object-cover"
@@ -26,8 +26,8 @@ export default function CafesPage() {
         </div>
         <div className="absolute right-0 top-[120px] w-[20%] h-[65%] max-lg:hidden">
           <Image
-            src="/img/delivery.png"
-            alt="Counterpart Foods delivery"
+            src="/img/customer.jpg"
+            alt="Customer discovering products at a coffee shop shelf"
             fill
             className="object-cover rounded-bl-[20px]"
           />
@@ -104,7 +104,7 @@ export default function CafesPage() {
       <section className="grid grid-cols-2 max-md:grid-cols-1">
         <div className="relative min-h-[600px] max-md:min-h-[350px] bg-forest">
           <Image
-            src="/img/pantry.png"
+            src="/img/pantry.jpg"
             alt="Counterpart Pantry shelf"
             fill
             className="object-cover"

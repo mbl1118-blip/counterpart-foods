@@ -38,7 +38,7 @@ export default function Home() {
           "A branded shelf of curated products placed inside your cafe. Trending snacks, better-for-you beverages, and wellness products your customers are already looking for.",
           "We select the products, place the shelf, stock it, and keep it fresh. You ring up the sales and keep the margin.",
         ]}
-        image="/img/pantry.png"
+        image="/img/pantry.jpg"
         imageAlt="Cobble & Co. curated pantry shelf with packaged goods"
         imageBg="cream"
       />
@@ -54,7 +54,7 @@ export default function Home() {
           "A distributor drops off product and leaves. We build and run a managed product program as a partner. Curation, merchandising, restocking, data, and optimization.",
           "The shelf gets better over time because we are paying attention.",
         ]}
-        image="/img/delivery.png"
+        image="/img/delivery.jpg"
         imageAlt="Counterpart Foods delivery to The Daily Grind"
         imageBg="forest"
         reverse
