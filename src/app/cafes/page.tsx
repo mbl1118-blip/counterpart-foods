@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "For Cafes | Counterpart Foods",
   description:
-    "Add a managed product shelf to your coffee shop. Curated snacks, beverages, and wellness products on consignment. Zero inventory risk, new revenue.",
+    "Add a managed product shelf to your coffee shop. The best emerging CPG brands, on consignment, zero inventory risk. Managed by the Counterpart team.",
 };
 
 export default function CafesPage() {
@@ -14,9 +14,8 @@ export default function CafesPage() {
     <>
       <Navbar />
 
-      {/* Hero - massive headline */}
+      {/* Hero */}
       <section className="min-h-screen flex items-center justify-center bg-cream relative overflow-hidden pt-[80px]">
-        {/* Left image */}
         <div className="absolute left-0 top-[80px] bottom-0 w-[22%] max-lg:hidden">
           <Image
             src="/img/cafe-counter.png"
@@ -25,7 +24,6 @@ export default function CafesPage() {
             className="object-cover"
           />
         </div>
-        {/* Right image */}
         <div className="absolute right-0 top-[120px] w-[20%] h-[65%] max-lg:hidden">
           <Image
             src="/img/delivery.png"
@@ -40,11 +38,10 @@ export default function CafesPage() {
             className="text-[4.5rem] max-lg:text-[3.2rem] max-sm:text-[2.4rem] font-bold text-forest leading-[1.05] tracking-tight mb-8"
             style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
           >
-            Your customers want more than coffee. Give it to them.
+            The best emerging CPG brands, on your counter, managed for you.
           </h1>
-          <p className="text-[1.15rem] text-gray leading-[1.7] max-w-[460px] mx-auto mb-10">
-            We install and manage a curated product shelf inside your cafe. You
-            sell it. You keep the margin. We do everything else.
+          <p className="text-[1.15rem] text-gray leading-[1.7] max-w-[480px] mx-auto mb-10">
+            You keep the margin on whatever sells. We handle the rest.
           </p>
           <a
             href="#cafe-apply"
@@ -55,7 +52,7 @@ export default function CafesPage() {
         </div>
       </section>
 
-      {/* What you get - color blocked */}
+      {/* The deal */}
       <section className="bg-forest py-24 px-8">
         <h2
           className="text-[3.5rem] max-md:text-[2.4rem] font-bold text-white text-center mb-20 leading-[1.1]"
@@ -68,18 +65,18 @@ export default function CafesPage() {
           {[
             {
               num: "01",
-              title: "Zero inventory risk.",
-              text: "Everything is on consignment. If it does not sell, we swap it out. You never pay for product that sits.",
+              title: "It's consignment.",
+              text: "Pay for the product that sells. Invoiced weekly, direct from POS data. You don't buy inventory and you don't carry risk.",
             },
             {
               num: "02",
               title: "Zero work for your team.",
-              text: "We select, stock, restock, and manage the shelf. Your staff rings it up. That is it.",
+              text: "We select, stock, restock, and manage the shelf. Your staff rings it up. That's it.",
             },
             {
               num: "03",
-              title: "New revenue from day one.",
-              text: "You keep the margin between the sell-to price and your shelf price. No upfront cost. No monthly fee.",
+              title: "Pure margin, zero overhead.",
+              text: "A new revenue stream with zero upfront cost and zero operating costs. Every sale is pure margin for your shop.",
             },
           ].map((item) => (
             <div key={item.num} className="text-center">
@@ -103,19 +100,17 @@ export default function CafesPage() {
         </div>
       </section>
 
-      {/* How it works - split layout */}
+      {/* How it works */}
       <section className="grid grid-cols-2 max-md:grid-cols-1">
-        {/* Image */}
         <div className="relative min-h-[600px] max-md:min-h-[350px] bg-forest">
           <Image
             src="/img/pantry.png"
-            alt="Counterpart Pantry shelf unit"
+            alt="Counterpart Pantry shelf"
             fill
             className="object-cover"
           />
         </div>
 
-        {/* Steps */}
         <div className="bg-cream flex flex-col justify-center px-14 py-16 max-md:px-8">
           <h2
             className="text-[3rem] max-md:text-[2.2rem] font-bold text-forest mb-12 leading-[1.1]"
@@ -127,12 +122,12 @@ export default function CafesPage() {
           <div className="space-y-8">
             {[
               {
-                title: "We install a shelf",
+                title: "We place a shelf",
                 text: "A compact, branded display designed to fit your space. Floor unit or countertop. We bring it, we set it up.",
               },
               {
                 title: "We stock it",
-                text: "Curated snacks, beverages, and wellness products selected for your neighborhood. New products rotate in based on what sells.",
+                text: "Curated snacks, beverages, and wellness products picked for your neighborhood. New products rotate in based on what's selling.",
               },
               {
                 title: "We plug into your POS",
@@ -159,7 +154,7 @@ export default function CafesPage() {
         </div>
       </section>
 
-      {/* Objection busters - terra band */}
+      {/* Objection busters */}
       <section className="bg-terra py-20 px-8">
         <h2
           className="text-[2.8rem] max-md:text-[2rem] font-bold text-white text-center mb-14 leading-[1.1]"
@@ -170,20 +165,20 @@ export default function CafesPage() {
         <div className="max-w-[900px] mx-auto grid grid-cols-2 max-md:grid-cols-1 gap-8">
           {[
             {
-              q: "We do not have the space.",
-              a: "Our countertop unit is 20\" wide. If you have a corner or an end-of-counter spot, we can make it work.",
+              q: "We don't have the space.",
+              a: "Our countertop unit is 20\" wide. Got a corner or an end-of-counter spot? We can make it work.",
             },
             {
-              q: "Our POS cannot handle it.",
-              a: "We integrate with Toast, Square, and Clover. Products appear in your system like anything else you sell.",
+              q: "Our POS can't handle it.",
+              a: "We integrate with Toast, Square, and Clover. Products show up in your system like anything else you sell.",
             },
             {
               q: "We already sell some snacks.",
-              a: "Great. We will build around what you have or replace what is not working. Either way, we manage it.",
+              a: "Great. We'll build around what you have or replace what's not working. Either way, we manage it.",
             },
             {
-              q: "What if the products do not sell?",
-              a: "Consignment. You do not own unsold product. We swap in what works based on real data from your location.",
+              q: "What if the products don't sell?",
+              a: "Hello, it's consignment. You don't own unsold product. We swap in what works based on real data from your location.",
             },
           ].map((item, i) => (
             <div key={i} className="bg-white/15 rounded-[12px] p-8">
@@ -201,19 +196,20 @@ export default function CafesPage() {
         </div>
       </section>
 
-      {/* Pull quote */}
+      {/* Social proof */}
       <section className="bg-cream py-20 px-8">
         <div className="max-w-[800px] mx-auto text-center">
           <p
-            className="text-[2.2rem] max-md:text-[1.6rem] font-bold text-forest leading-[1.3] mb-6"
+            className="text-[2rem] max-md:text-[1.5rem] font-bold text-forest leading-[1.35] mb-6"
             style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
           >
-            &ldquo;Your customers browse while they wait for their
-            coffee. Right now, that attention goes nowhere. We turn it into
-            revenue.&rdquo;
+            &ldquo;Counterpart allows us to monetize more of our shop and
+            contributes directly to our bottom line. The best part is, my
+            customers love discovering new products every week. It&apos;s a
+            no-brainer.&rdquo;
           </p>
           <p className="text-terra font-semibold text-[0.95rem]">
-            Counterpart Foods Team
+            Cafe Partner, NYC
           </p>
         </div>
       </section>
@@ -228,7 +224,8 @@ export default function CafesPage() {
             Become a Partner
           </h2>
 
-          <form action="https://formspree.io/f/YOUR_CAFE_FORM_ID" method="POST">
+          <form action="https://formspree.io/f/xyzybdkn" method="POST">
+            <input type="hidden" name="_subject" value="New Cafe Partner Application" />
             <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-4 mb-4">
               <div>
                 <label className="block text-[0.8rem] font-semibold text-dark mb-1.5 tracking-wide">
@@ -267,12 +264,12 @@ export default function CafesPage() {
               </div>
               <div>
                 <label className="block text-[0.8rem] font-semibold text-dark mb-1.5 tracking-wide">
-                  Number of Locations
+                  Instagram
                 </label>
                 <input
                   type="text"
-                  name="locations_count"
-                  placeholder="e.g., 1, 3, 12"
+                  name="instagram"
+                  placeholder="@yourcafe"
                   className="w-full px-4 py-3.5 border-2 border-forest/20 rounded-[8px] text-[0.95rem] text-dark bg-white focus:outline-none focus:border-forest transition-all placeholder:text-gray/40"
                 />
               </div>
@@ -290,15 +287,26 @@ export default function CafesPage() {
               </div>
               <div>
                 <label className="block text-[0.8rem] font-semibold text-dark mb-1.5 tracking-wide">
-                  POS System
+                  Number of Locations
                 </label>
                 <input
                   type="text"
-                  name="pos_system"
-                  placeholder="e.g., Toast, Square, Clover"
+                  name="locations_count"
+                  placeholder="e.g., 1, 3, 12"
                   className="w-full px-4 py-3.5 border-2 border-forest/20 rounded-[8px] text-[0.95rem] text-dark bg-white focus:outline-none focus:border-forest transition-all placeholder:text-gray/40"
                 />
               </div>
+            </div>
+            <div className="mb-4">
+              <label className="block text-[0.8rem] font-semibold text-dark mb-1.5 tracking-wide">
+                POS System
+              </label>
+              <input
+                type="text"
+                name="pos_system"
+                placeholder="e.g., Toast, Square, Clover"
+                className="w-full px-4 py-3.5 border-2 border-forest/20 rounded-[8px] text-[0.95rem] text-dark bg-white focus:outline-none focus:border-forest transition-all placeholder:text-gray/40"
+              />
             </div>
             <div className="mb-6">
               <label className="block text-[0.8rem] font-semibold text-dark mb-1.5 tracking-wide">
@@ -335,9 +343,10 @@ export default function CafesPage() {
           </h2>
           <p className="text-cream/75 text-[1rem] leading-[1.75] mb-8 max-w-[480px] mx-auto">
             Chef-made meals and snacks delivered to your counter every morning.
-            We are building this now and looking for early partners in NYC.
+            We&apos;re building this now and looking for early partners in NYC.
           </p>
-          <form action="https://formspree.io/f/YOUR_WAITLIST_FORM_ID" method="POST" className="flex gap-3 max-sm:flex-col max-w-[440px] mx-auto">
+          <form action="https://formspree.io/f/xyzybdkn" method="POST" className="flex gap-3 max-sm:flex-col max-w-[440px] mx-auto">
+            <input type="hidden" name="_subject" value="Food Program Waitlist" />
             <input
               type="email"
               name="email"

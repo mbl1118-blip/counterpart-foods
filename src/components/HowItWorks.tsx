@@ -9,7 +9,7 @@ const steps = [
   {
     num: "02",
     title: "We place.",
-    text: "A branded shelf unit installed in your cafe, stocked and merchandised by our team.",
+    text: "A branded shelf placed in your cafe, stocked and merchandised by our team.",
   },
   {
     num: "03",

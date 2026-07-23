@@ -36,7 +36,7 @@ export default function Home() {
         title="A store within your store."
         paragraphs={[
           "A branded shelf of curated products placed inside your cafe. Trending snacks, better-for-you beverages, and wellness products your customers are already looking for.",
-          "We select the products, install the shelf, stock it, and keep it fresh. You ring up the sales and keep the margin.",
+          "We select the products, place the shelf, stock it, and keep it fresh. You ring up the sales and keep the margin.",
         ]}
         image="/img/pantry.png"
         imageAlt="Cobble & Co. curated pantry shelf with packaged goods"

@@ -16,7 +16,7 @@ export default function Navbar() {
     <>
       {/* Top banner */}
       <div className="fixed top-0 left-0 right-0 z-[101] bg-forest text-white text-center py-2 px-4 text-[0.82rem] font-semibold tracking-wide">
-        Now launching in NYC coffee shops.
+        Launching soon in NYC.
       </div>
 
       {/* Nav */}

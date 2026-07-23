@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "For Brands | Counterpart Foods",
   description:
-    "Get your products onto shelves in NYC's best independent coffee shops. Apply for placement in the Counterpart Pantry network.",
+    "Get your products onto shelves in NYC's best independent coffee shops. No pitching accounts. No restrictive distribution agreements. Real sales and real data from day one.",
 };
 
 export default function BrandsPage() {
@@ -14,9 +14,8 @@ export default function BrandsPage() {
     <>
       <Navbar />
 
-      {/* Hero - oversized headline with flanking images */}
+      {/* Hero */}
       <section className="min-h-screen flex items-center justify-center bg-cream relative overflow-hidden pt-[80px]">
-        {/* Left image */}
         <div className="absolute left-0 top-[80px] bottom-0 w-[22%] max-lg:hidden">
           <Image
             src="/img/pantry.png"
@@ -25,7 +24,6 @@ export default function BrandsPage() {
             className="object-cover"
           />
         </div>
-        {/* Right image */}
         <div className="absolute right-0 top-[120px] w-[20%] h-[65%] max-lg:hidden">
           <Image
             src="/img/bowl.jpg"
@@ -40,11 +38,12 @@ export default function BrandsPage() {
             className="text-[4.5rem] max-lg:text-[3.2rem] max-sm:text-[2.4rem] font-bold text-forest leading-[1.05] tracking-tight mb-8"
             style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
           >
-            Want a spot on our shelves? Let&apos;s talk.
+            Skip the pitch. Get on the shelf.
           </h1>
-          <p className="text-[1.15rem] text-gray leading-[1.7] max-w-[480px] mx-auto mb-10">
-            We place your product inside NYC&apos;s best independent coffee
-            shops. You pay a placement fee. The cafe sells it. Everyone wins.
+          <p className="text-[1.15rem] text-gray leading-[1.7] max-w-[500px] mx-auto mb-10">
+            No pitching accounts for months. No expensive, restrictive
+            distribution agreements. Just a transparent, pay-for-placement
+            partnership that gives you real sales and real data from day one.
           </p>
           <a
             href="#brand-apply"
@@ -55,31 +54,36 @@ export default function BrandsPage() {
         </div>
       </section>
 
-      {/* The Counterpart Difference - color blocked */}
+      {/* The pain */}
       <section className="bg-forest py-24 px-8">
         <h2
-          className="text-[3.5rem] max-md:text-[2.4rem] font-bold text-white text-center mb-20 leading-[1.1]"
+          className="text-[3.5rem] max-md:text-[2.4rem] font-bold text-white text-center mb-6 leading-[1.1]"
           style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
         >
-          The Counterpart Difference
+          Stop begging for shelf space.
         </h2>
+        <p className="text-cream/70 text-[1.05rem] leading-[1.7] text-center max-w-[560px] mx-auto mb-20">
+          Early-stage brands spend months (or years) chasing retail distribution
+          with no guarantees. We take the guesswork out: dedicated shelf space on
+          a monthly basis with transparent economics.
+        </p>
 
         <div className="max-w-[1000px] mx-auto grid grid-cols-3 max-md:grid-cols-1 gap-12">
           {[
             {
               num: "01",
-              title: "Real shelves, real customers.",
-              text: "Not a pop-up. Not a virtual shelf. Your product on a curated display inside coffee shops with daily foot traffic.",
+              title: "We place your product.",
+              text: "Real shelves inside real coffee shops with daily foot traffic. Not a pop-up. Not a marketplace listing. Physical, curated retail.",
             },
             {
               num: "02",
-              title: "Limited competition.",
-              text: "We cap categories. Your granola is not sitting next to five other granolas. Thoughtful placement, not a free-for-all.",
+              title: "You consign inventory.",
+              text: "Ship product to us at wholesale. We merchandise it across our network. Cafes pay for what sells. You keep your wholesale revenue.",
             },
             {
               num: "03",
-              title: "Actual sell-through data.",
-              text: "POS-integrated reporting by location, by week. Know exactly what moved, where, and when. No guessing.",
+              title: "You see exactly what's selling.",
+              text: "POS-integrated sell-through data by location, by week. Know what moved, where, and when. Use it to refine your product, pitch bigger retailers, and grow.",
             },
           ].map((item) => (
             <div key={item.num} className="text-center">
@@ -103,9 +107,8 @@ export default function BrandsPage() {
         </div>
       </section>
 
-      {/* How it works - split layout */}
+      {/* How it works */}
       <section className="grid grid-cols-2 max-md:grid-cols-1">
-        {/* Image */}
         <div className="relative min-h-[600px] max-md:min-h-[350px] bg-cream">
           <Image
             src="/img/cafe-counter.png"
@@ -115,7 +118,6 @@ export default function BrandsPage() {
           />
         </div>
 
-        {/* Steps */}
         <div className="bg-cream flex flex-col justify-center px-14 py-16 max-md:px-8">
           <h2
             className="text-[3rem] max-md:text-[2.2rem] font-bold text-forest mb-12 leading-[1.1]"
@@ -128,19 +130,19 @@ export default function BrandsPage() {
             {[
               {
                 title: "Submit an application",
-                text: "Tell us about your brand and product. Our team reviews every submission for fit with our cafe network and customer base.",
+                text: "Tell us about your brand and product. Our team reviews every submission for fit with our cafe network.",
               },
               {
                 title: "Pay a monthly placement fee",
-                text: "Accepted brands pay a flat monthly fee per location. That gets your product on a curated shelf inside real coffee shops with daily foot traffic.",
+                text: "Accepted brands pay a flat monthly fee per location. That's it. No revenue share, no complicated terms.",
               },
               {
                 title: "Consign your product",
-                text: "You ship inventory to us at your wholesale price. We place and merchandise it across our cafe network. You keep the wholesale revenue on every unit sold.",
+                text: "Ship inventory to us at wholesale. We place and merchandise it across our cafe network. You keep the wholesale revenue on every unit sold.",
               },
               {
-                title: "Get real sell-through data",
-                text: "POS-integrated reporting by location, by week. Know exactly what moved, where, and when. We use it to optimize. You use it to grow.",
+                title: "Get weekly sell-through data",
+                text: "POS-integrated reporting by location, by week. Know exactly what's moving, where, and when. We use it to optimize. You use it to grow.",
               },
             ].map((step, i) => (
               <div key={i} className="border-t-[2px] border-forest/15 pt-6">
@@ -159,7 +161,7 @@ export default function BrandsPage() {
         </div>
       </section>
 
-      {/* Stats / social proof band */}
+      {/* Stats */}
       <section className="bg-terra py-16 px-8">
         <div className="max-w-[900px] mx-auto grid grid-cols-3 max-md:grid-cols-1 gap-8 text-center">
           {[
@@ -180,23 +182,25 @@ export default function BrandsPage() {
         </div>
       </section>
 
-      {/* Pull quote */}
+      {/* Social proof */}
       <section className="bg-cream py-20 px-8">
         <div className="max-w-[800px] mx-auto text-center">
           <p
-            className="text-[2.2rem] max-md:text-[1.6rem] font-bold text-forest leading-[1.3] mb-6"
+            className="text-[2rem] max-md:text-[1.5rem] font-bold text-forest leading-[1.35] mb-6"
             style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
           >
-            &ldquo;The best way to get your product in front of the right
-            people is to put it where they already go every morning.&rdquo;
+            &ldquo;Our beverage brand is still new and we want to learn what
+            works and what doesn&apos;t. Counterpart is the most cost-effective
+            way to get real sell-through data in a low-risk, straightforward
+            way.&rdquo;
           </p>
           <p className="text-terra font-semibold text-[0.95rem]">
-            Counterpart Foods Team
+            Brand Partner
           </p>
         </div>
       </section>
 
-      {/* Application form - clean, simple */}
+      {/* Application form */}
       <section className="bg-white py-24 px-8" id="brand-apply">
         <div className="max-w-[560px] mx-auto">
           <h2
@@ -206,7 +210,8 @@ export default function BrandsPage() {
             Apply Now
           </h2>
 
-          <form action="https://formspree.io/f/YOUR_BRAND_FORM_ID" method="POST">
+          <form action="https://formspree.io/f/xyzybdkn" method="POST">
+            <input type="hidden" name="_subject" value="New Brand Application" />
             <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-4 mb-4">
               <div>
                 <label className="block text-[0.8rem] font-semibold text-dark mb-1.5 tracking-wide">
@@ -245,6 +250,19 @@ export default function BrandsPage() {
               </div>
               <div>
                 <label className="block text-[0.8rem] font-semibold text-dark mb-1.5 tracking-wide">
+                  Instagram
+                </label>
+                <input
+                  type="text"
+                  name="instagram"
+                  placeholder="@yourbrand"
+                  className="w-full px-4 py-3.5 border-2 border-forest/20 rounded-[8px] text-[0.95rem] text-dark bg-white focus:outline-none focus:border-forest transition-all placeholder:text-gray/40"
+                />
+              </div>
+            </div>
+            <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-4 mb-4">
+              <div>
+                <label className="block text-[0.8rem] font-semibold text-dark mb-1.5 tracking-wide">
                   Brand URL
                 </label>
                 <input
@@ -253,17 +271,17 @@ export default function BrandsPage() {
                   className="w-full px-4 py-3.5 border-2 border-forest/20 rounded-[8px] text-[0.95rem] text-dark bg-white focus:outline-none focus:border-forest transition-all"
                 />
               </div>
-            </div>
-            <div className="mb-4">
-              <label className="block text-[0.8rem] font-semibold text-dark mb-1.5 tracking-wide">
-                Product Category
-              </label>
-              <input
-                type="text"
-                name="product_category"
-                placeholder="e.g., granola, kombucha, protein bars"
-                className="w-full px-4 py-3.5 border-2 border-forest/20 rounded-[8px] text-[0.95rem] text-dark bg-white focus:outline-none focus:border-forest transition-all placeholder:text-gray/40"
-              />
+              <div>
+                <label className="block text-[0.8rem] font-semibold text-dark mb-1.5 tracking-wide">
+                  Product Category
+                </label>
+                <input
+                  type="text"
+                  name="product_category"
+                  placeholder="e.g., granola, kombucha"
+                  className="w-full px-4 py-3.5 border-2 border-forest/20 rounded-[8px] text-[0.95rem] text-dark bg-white focus:outline-none focus:border-forest transition-all placeholder:text-gray/40"
+                />
+              </div>
             </div>
             <div className="mb-6">
               <label className="block text-[0.8rem] font-semibold text-dark mb-1.5 tracking-wide">

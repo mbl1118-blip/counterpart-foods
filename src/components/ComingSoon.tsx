@@ -31,7 +31,7 @@ export default function ComingSoon() {
             </h2>
             <p className="text-cream/75 text-[1rem] leading-[1.75] mb-8 max-w-[420px]">
               Chef-made meals and snacks delivered to your counter every morning.
-              Simple finishing, premium results. We are building this now.
+              Simple finishing, premium results. We&apos;re building this now.
             </p>
             <a
               href="/cafes#food-waitlist"

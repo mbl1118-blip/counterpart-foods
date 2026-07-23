@@ -12,13 +12,6 @@ export default function Footer() {
       <p className="text-[0.78rem] text-[#777]">
         &copy; {new Date().getFullYear()} Counterpart Foods &middot; New York
         City &middot;{" "}
-        <a
-          href="mailto:michael@counterpartfoods.com"
-          className="text-[#999] no-underline hover:text-white transition-colors"
-        >
-          michael@counterpartfoods.com
-        </a>
-        {" "}&middot;{" "}
         <Link
           href="/cafes"
           className="text-[#999] no-underline hover:text-white transition-colors"

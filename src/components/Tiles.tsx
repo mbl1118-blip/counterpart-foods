@@ -3,7 +3,7 @@ import AnimateOnScroll from "./AnimateOnScroll";
 const tiles = [
   {
     title: "For cafe owners",
-    text: "We install a curated shelf in your space, stock it, manage it, and keep it fresh. You ring up sales and keep the margin. Zero inventory risk.",
+    text: "We place a curated shelf in your space, stock it, manage it, and keep it fresh. You ring up sales and keep the margin. Zero inventory risk.",
     cta: "Learn more",
     href: "/cafes",
   },
