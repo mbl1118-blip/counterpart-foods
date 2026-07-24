@@ -3,13 +3,13 @@ import AnimateOnScroll from "./AnimateOnScroll";
 const tiles = [
   {
     title: "For cafe owners",
-    text: "We place a curated shelf in your space, stock it, manage it, and keep it fresh. You ring up sales and keep the margin. Zero inventory risk.",
+    text: "We place a curated shelf in your space and plug into your POS. Product auto-restocks based on what sells. You ring up sales and keep the margin. Zero inventory risk.",
     cta: "Learn more",
     href: "/cafes",
   },
   {
     title: "For CPG brands",
-    text: "Get your product onto shelves inside NYC coffee shops. Pay a monthly placement fee. Consign your product. Get real sell-through data.",
+    text: "Get your product onto shelves inside NYC coffee shops. Pay a flat placement fee. Consign your product. We constantly optimize which stores carry it and how it performs.",
     cta: "Learn more",
     href: "/brands",
   },

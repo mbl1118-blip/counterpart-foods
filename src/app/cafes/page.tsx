@@ -41,7 +41,9 @@ export default function CafesPage() {
             The best emerging CPG brands, on your counter, managed for you.
           </h1>
           <p className="text-[1.15rem] text-gray leading-[1.7] max-w-[480px] mx-auto mb-10">
-            You keep the margin on whatever sells. We handle the rest.
+            Consignment, POS-driven auto-replenishment, and a product mix
+            that gets smarter over time. You keep the margin. We handle the
+            rest.
           </p>
           <a
             href="#cafe-apply"
@@ -70,13 +72,13 @@ export default function CafesPage() {
             },
             {
               num: "02",
-              title: "Zero work for your team.",
-              text: "We select, stock, restock, and manage the shelf. Your staff rings it up. That's it.",
+              title: "Zero thinking for your team.",
+              text: "We set up the shelf and integrate with your POS. Product auto-ships based on what's selling. Your staff rings it up. That's it.",
             },
             {
               num: "03",
-              title: "Pure margin, zero overhead.",
-              text: "A new revenue stream with zero upfront cost and zero operating costs. Every sale is pure margin for your shop.",
+              title: "A shelf that gets smarter.",
+              text: "We're constantly learning what sells on which shelves and refining placements across the network. Your product mix improves over time, automatically. Every sale is pure margin for your shop.",
             },
           ].map((item) => (
             <div key={item.num} className="text-center">
@@ -127,15 +129,15 @@ export default function CafesPage() {
               },
               {
                 title: "We stock it",
-                text: "Curated snacks, beverages, and wellness products picked for your neighborhood. New products rotate in based on what's selling.",
+                text: "Curated snacks, beverages, and wellness products picked for your neighborhood. We're constantly optimizing the mix based on real sell-through data from your location.",
               },
               {
                 title: "We plug into your POS",
-                text: "Toast, Square, Clover. We add the products to your system so checkout is seamless for your team.",
+                text: "Toast, Square, Clover. We integrate with your system so checkout is seamless and replenishment is automatic. When something sells, we know, and a new one's on the way.",
               },
               {
-                title: "You sell, we restock",
-                text: "Your team rings up sales. We monitor the data and keep the shelf full. You keep the spread.",
+                title: "You sell, it restocks itself",
+                text: "Your POS data triggers automatic replenishment. No ordering, no invoicing headaches, no calls to a rep. Product just shows up. You keep the spread.",
               },
             ].map((step, i) => (
               <div key={i} className="border-t-[2px] border-forest/15 pt-6">

@@ -63,9 +63,9 @@ export default function BrandsPage() {
           Stop begging for shelf space.
         </h2>
         <p className="text-cream/70 text-[1.05rem] leading-[1.7] text-center max-w-[560px] mx-auto mb-20">
-          Early-stage brands spend months (or years) chasing retail distribution
-          with no guarantees. We take the guesswork out: dedicated shelf space on
-          a monthly basis with transparent economics.
+          Retail distribution shouldn&apos;t take months of pitching and opaque
+          economics. We&apos;re making it as simple as buying ad space: pick your
+          locations, pay a flat fee, and see exactly what&apos;s working.
         </p>
 
         <div className="max-w-[1000px] mx-auto grid grid-cols-3 max-md:grid-cols-1 gap-12">
@@ -82,8 +82,8 @@ export default function BrandsPage() {
             },
             {
               num: "03",
-              title: "You see exactly what's selling.",
-              text: "POS-integrated sell-through data by location, by week. Know what moved, where, and when. Use it to refine your product, pitch bigger retailers, and grow.",
+              title: "We optimize constantly.",
+              text: "POS-integrated sell-through data by location, by week. We use it to refine which stores carry your product, how it's positioned, and what's working. You use it to pitch bigger retailers and grow.",
             },
           ].map((item) => (
             <div key={item.num} className="text-center">
@@ -141,8 +141,8 @@ export default function BrandsPage() {
                 text: "Ship inventory to us at wholesale. We place and merchandise it across our cafe network. You keep the wholesale revenue on every unit sold.",
               },
               {
-                title: "Get weekly sell-through data",
-                text: "POS-integrated reporting by location, by week. Know exactly what's moving, where, and when. We use it to optimize. You use it to grow.",
+                title: "Get data, we optimize",
+                text: "Weekly sell-through reporting by location. We're constantly learning what works where and refining your placements across the network. You get the data to grow. We use it to make your shelf perform better.",
               },
             ].map((step, i) => (
               <div key={i} className="border-t-[2px] border-forest/15 pt-6">

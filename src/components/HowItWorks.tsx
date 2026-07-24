@@ -13,8 +13,8 @@ const steps = [
   },
   {
     num: "03",
-    title: "We manage.",
-    text: "Restocking, rotation, and product swaps based on real sell-through data. You do nothing.",
+    title: "It runs itself.",
+    text: "POS data triggers automatic replenishment. We continuously optimize the product mix based on what's actually selling in your location.",
   },
   {
     num: "04",

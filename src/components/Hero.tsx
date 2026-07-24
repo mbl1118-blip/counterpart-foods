@@ -30,8 +30,8 @@ export default function Hero() {
           The managed shelf for NYC coffee shops.
         </h1>
         <p className="text-[1.2rem] text-gray leading-[1.65] max-w-[440px] mx-auto mb-10">
-          Curated CPG brands placed, stocked, and managed inside your cafe. New
-          revenue, zero work.
+          Curated CPG brands placed inside your cafe, automatically restocked
+          based on what sells. New revenue, zero thinking.
         </p>
         <div className="flex gap-4 justify-center flex-wrap">
           <a

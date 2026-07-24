@@ -6,7 +6,7 @@ export default function ValueBanner() {
       <div className="max-w-[900px] mx-auto grid grid-cols-3 max-md:grid-cols-1 gap-8 text-center">
         {[
           { stat: "0", label: "Upfront cost for cafes" },
-          { stat: "100%", label: "Consignment-based inventory" },
+          { stat: "Auto", label: "POS-driven replenishment" },
           { stat: "Weekly", label: "Sell-through reporting" },
         ].map((item, i) => (
           <AnimateOnScroll key={i} delay={i * 100}>

@@ -36,7 +36,7 @@ export default function Home() {
         title="A store within your store."
         paragraphs={[
           "A branded shelf of curated products placed inside your cafe. Trending snacks, better-for-you beverages, and wellness products your customers are already looking for.",
-          "We select the products, place the shelf, stock it, and keep it fresh. You ring up the sales and keep the margin.",
+          "We select the products, place the shelf, and plug into your POS. The shelf restocks automatically based on what's selling. You ring up the sales and keep the margin.",
         ]}
         image="/img/pantry.jpg"
         imageAlt="Cobble & Co. curated pantry shelf with packaged goods"
@@ -51,8 +51,8 @@ export default function Home() {
         tag="Not a Distributor"
         title="We are your counterpart."
         paragraphs={[
-          "A distributor drops off product and leaves. We build and run a managed product program as a partner. Curation, merchandising, restocking, data, and optimization.",
-          "The shelf gets better over time because we are paying attention.",
+          "A distributor drops off product and leaves. We build a data-driven product program that constantly learns what sells where. Curation, optimization, and automatic replenishment.",
+          "The shelf gets smarter over time because the data tells us what's working.",
         ]}
         image="/img/delivery.jpg"
         imageAlt="Counterpart Foods delivery to The Daily Grind"
